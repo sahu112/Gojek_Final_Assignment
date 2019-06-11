@@ -1,25 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-06-09T16:50:52Z" name="Default suite" finished-at="2019-06-09T16:51:08Z" duration-ms="16307">
+  <suite started-at="2019-06-11T12:16:10Z" name="Suite" finished-at="2019-06-11T12:18:20Z" duration-ms="129591">
     <groups>
     </groups>
-    <test started-at="2019-06-09T16:50:52Z" name="Default test" finished-at="2019-06-09T16:51:08Z" duration-ms="16307">
+    <test started-at="2019-06-11T12:16:10Z" name="Test" finished-at="2019-06-11T12:18:20Z" duration-ms="129591">
       <class name="com.Gojek.AssigmentTest.LoginTest">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.Gojek.AssigmentTest.LoginTest@60015ef5]" started-at="2019-06-09T16:50:52Z" name="launchBrowser" finished-at="2019-06-09T16:51:00Z" duration-ms="7887" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.Gojek.AssigmentTest.LoginTest@568ff82]" started-at="2019-06-11T12:16:10Z" name="launchBrowser" finished-at="2019-06-11T12:16:20Z" duration-ms="10007" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="loginAndLogout()[pri:0, instance:com.Gojek.AssigmentTest.LoginTest@60015ef5]" started-at="2019-06-09T16:51:00Z" name="loginAndLogout" finished-at="2019-06-09T16:51:07Z" duration-ms="7537" status="PASS">
+        <test-method signature="loginAndLogout()[pri:0, instance:com.Gojek.AssigmentTest.LoginTest@568ff82]" started-at="2019-06-11T12:16:20Z" name="loginAndLogout" finished-at="2019-06-11T12:16:31Z" duration-ms="10833" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAndLogout -->
-        <test-method is-config="true" signature="quiteDriver()[pri:0, instance:com.Gojek.AssigmentTest.LoginTest@60015ef5]" started-at="2019-06-09T16:51:07Z" name="quiteDriver" finished-at="2019-06-09T16:51:08Z" duration-ms="827" status="PASS">
+        <test-method is-config="true" signature="quiteDriver()[pri:0, instance:com.Gojek.AssigmentTest.LoginTest@568ff82]" started-at="2019-06-11T12:16:31Z" name="quiteDriver" finished-at="2019-06-11T12:16:32Z" duration-ms="862" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quiteDriver -->
       </class> <!-- com.Gojek.AssigmentTest.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.Gojek.AssigmentTest.HomePageTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.Gojek.AssigmentTest.HomePageTest@50caa560]" started-at="2019-06-11T12:16:32Z" name="launchBrowser" finished-at="2019-06-11T12:16:45Z" duration-ms="13105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="addEarphoneToCart()[pri:1, instance:com.Gojek.AssigmentTest.HomePageTest@50caa560]" started-at="2019-06-11T12:16:45Z" name="addEarphoneToCart" finished-at="2019-06-11T12:17:15Z" duration-ms="29698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEarphoneToCart -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.Gojek.AssigmentTest.HomePageTest@50caa560]" started-at="2019-06-11T12:17:15Z" name="quitDriver" finished-at="2019-06-11T12:17:16Z" duration-ms="1018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.Gojek.AssigmentTest.HomePageTest@50caa560]" started-at="2019-06-11T12:17:16Z" name="launchBrowser" finished-at="2019-06-11T12:17:31Z" duration-ms="15572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="addSeondItem()[pri:2, instance:com.Gojek.AssigmentTest.HomePageTest@50caa560]" started-at="2019-06-11T12:17:31Z" name="addSeondItem" finished-at="2019-06-11T12:17:51Z" duration-ms="19990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addSeondItem -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.Gojek.AssigmentTest.HomePageTest@50caa560]" started-at="2019-06-11T12:17:51Z" name="quitDriver" finished-at="2019-06-11T12:17:52Z" duration-ms="944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.Gojek.AssigmentTest.HomePageTest@50caa560]" started-at="2019-06-11T12:17:52Z" name="launchBrowser" finished-at="2019-06-11T12:18:08Z" duration-ms="16110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="deleteItemsFromCart()[pri:3, instance:com.Gojek.AssigmentTest.HomePageTest@50caa560]" started-at="2019-06-11T12:18:08Z" name="deleteItemsFromCart" finished-at="2019-06-11T12:18:19Z" duration-ms="10451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteItemsFromCart -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.Gojek.AssigmentTest.HomePageTest@50caa560]" started-at="2019-06-11T12:18:19Z" name="quitDriver" finished-at="2019-06-11T12:18:20Z" duration-ms="937" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.Gojek.AssigmentTest.HomePageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

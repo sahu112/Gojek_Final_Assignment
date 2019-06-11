@@ -8,6 +8,10 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,7 +26,9 @@ public class GojekGenricUtils {
 	static long IMPLICITE_WAIT=20;
 	static long PAGE_TIMEOUT=20;
 	Actions act;
-	
+	public static String TESTDATA_SHEET_PATH="D:\\JavaProject\\Gojek_assignment\\src\\main\\java\\com\\Gojek\\TestData\\GojekTestData.xlsx";
+	public static Workbook book;
+	public static Sheet sheet;
 	
 	public GojekGenricUtils() {
 		
@@ -74,6 +80,35 @@ public class GojekGenricUtils {
 		File scrFile = ((TakesScreenshot) Driver.driver).getScreenshotAs(OutputType.FILE);
 		String currentDir = System.getProperty("user.dir");
 		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
+	}
+	
+	public static Object[][] getTestData(String sheetName) {
+	
+		FileInputStream file=null;
+		try {
+			file=new FileInputStream(TESTDATA_SHEET_PATH);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		try {
+			book=WorkbookFactory.create(file);
+		} catch (InvalidFormatException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		sheet=book.getSheet(sheetName);
+		
+		Object [][] data=new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
+		//System.out.println(sheet.getLastRowNum() + "--------" +
+				// sheet.getRow(0).getLastCellNum());
+		for (int i = 0; i < sheet.getLastRowNum(); i++) {
+			for (int k = 0; k < sheet.getRow(0).getLastCellNum(); k++) {
+				data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
+			
+			}
+		}
+		return data;
 	}
 	
 	
