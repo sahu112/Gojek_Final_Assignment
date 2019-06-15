@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 11 17:46:10 IST 2019</td>
+<td>Started on:</td><td>Sat Jun 15 11:44:37 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>129 seconds (129591 ms)</td>
+<tr><td>Total time:</td><td>115 seconds (115776 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,39 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Gojek.AssigmentTest.HomePageTest.searchProduct()'><b>searchProduct</b><br>Test class: com.Gojek.AssigmentTest.HomePageTest</td>
+<td><div><pre>org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: searchProduct([])
+Arguments: [(java.lang.String) Dell laptop,(java.lang.String) ,(java.lang.String) ]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1383715287", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1383715287'><pre>org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: searchProduct([])
+Arguments: [(java.lang.String) Dell laptop,(java.lang.String) ,(java.lang.String) ]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:45)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:796)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:983)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.Gojek.AssigmentTest.HomePageTest@2525ff7e</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -77,23 +110,23 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.Gojek.AssigmentTest.HomePageTest.addEarphoneToCart()'><b>addEarphoneToCart</b><br>Test class: com.Gojek.AssigmentTest.HomePageTest</td>
 <td></td>
-<td>29</td>
-<td>com.Gojek.AssigmentTest.HomePageTest@50caa560</td></tr>
+<td>19</td>
+<td>com.Gojek.AssigmentTest.HomePageTest@2525ff7e</td></tr>
 <tr>
 <td title='com.Gojek.AssigmentTest.HomePageTest.addSeondItem()'><b>addSeondItem</b><br>Test class: com.Gojek.AssigmentTest.HomePageTest</td>
 <td></td>
-<td>19</td>
-<td>com.Gojek.AssigmentTest.HomePageTest@50caa560</td></tr>
+<td>16</td>
+<td>com.Gojek.AssigmentTest.HomePageTest@2525ff7e</td></tr>
 <tr>
 <td title='com.Gojek.AssigmentTest.HomePageTest.deleteItemsFromCart()'><b>deleteItemsFromCart</b><br>Test class: com.Gojek.AssigmentTest.HomePageTest</td>
 <td></td>
-<td>10</td>
-<td>com.Gojek.AssigmentTest.HomePageTest@50caa560</td></tr>
+<td>7</td>
+<td>com.Gojek.AssigmentTest.HomePageTest@2525ff7e</td></tr>
 <tr>
 <td title='com.Gojek.AssigmentTest.LoginTest.loginAndLogout()'><b>loginAndLogout</b><br>Test class: com.Gojek.AssigmentTest.LoginTest</td>
 <td></td>
-<td>10</td>
-<td>com.Gojek.AssigmentTest.LoginTest@568ff82</td></tr>
+<td>8</td>
+<td>com.Gojek.AssigmentTest.LoginTest@61d6015a</td></tr>
 </table><p>
 </body>
 </html>
